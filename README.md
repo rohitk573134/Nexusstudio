@@ -29,3 +29,13 @@ npm run dev
 - Connect every admin module to dedicated CRUD APIs
 - Integrate Cloudinary upload widget for gallery/media management
 - Add analytics dashboard widgets and inquiry pipeline status tracking
+
+
+## Agency Agents Workflow
+This project uses an **agency-agent operating model** for execution planning and delivery. See:
+- `AGENCY_AGENTS_SKILL_PLAN.md`
+- `WEBSITE_EXECUTION_SPEC.md`
+- `AGENCY_EXECUTION_MATRIX.md`
+
+These documents map strategic, UX, engineering, SEO, and operations responsibilities to specialized agent roles.
+

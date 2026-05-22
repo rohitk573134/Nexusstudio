@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-slate-50 text-slate-900; }
+.glass { @apply bg-white/15 backdrop-blur-md border border-white/30; }

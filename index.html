@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naidu Andaman Travels | Premium Andaman Packages</title>
+    <meta
+      name="description"
+      content="Discover handcrafted Andaman tour packages with transparent pricing, local experts, and instant WhatsApp planning support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <p>📍 Port Blair-Based Local Experts</p>
+      <p>⚡ Avg. Response Time: Under 15 Minutes</p>
+      <a href="tel:+919000000000">📞 +91 90000 00000</a>
+    </div>
+
+    <header class="header">
+      <a href="#" class="brand">Naidu Andaman Travels</a>
+      <nav class="nav">
+        <a href="#packages">Packages</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#planner">Custom Plan</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="https://wa.me/919000000000" target="_blank" rel="noreferrer">WhatsApp Us</a>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-content">
+          <span class="pill">Trusted Andaman Trip Specialists</span>
+          <h1>Build Your Dream Andaman Trip With Local Experts</h1>
+          <p>
+            Get curated itineraries, handpicked stays, ferry coordination, and on-ground support — all with transparent pricing and fast assistance.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#planner">Get Free Itinerary</a>
+            <a class="btn btn-secondary" href="#packages">Explore Packages</a>
+          </div>
+          <div class="metrics">
+            <article><strong>2500+</strong><span>Trips Planned</span></article>
+            <article><strong>4.8/5</strong><span>Verified Rating</span></article>
+            <article><strong>8+ Years</strong><span>Andaman Expertise</span></article>
+          </div>
+        </div>
+
+        <form class="lead-card" id="quickForm">
+          <h2>Start Planning in 30 Seconds</h2>
+          <label>Travel Month <input required placeholder="e.g., November" /></label>
+          <label>Traveler Type
+            <select required>
+              <option value="">Select traveler type</option>
+              <option>Honeymoon Couple</option>
+              <option>Family</option>
+              <option>Friends Group</option>
+            </select>
+          </label>
+          <label>Budget
+            <select required>
+              <option value="">Select budget range</option>
+              <option>₹25,000 – ₹40,000</option>
+              <option>₹40,000 – ₹70,000</option>
+              <option>₹70,000+</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Get My Plan</button>
+          <small id="quickMsg" class="message"></small>
+        </form>
+      </section>
+
+      <section class="container section" id="packages">
+        <div class="section-head">
+          <h2>Top Andaman Packages</h2>
+          <select id="typeFilter" class="filter">
+            <option value="all">All Packages</option>
+            <option value="couple">Couple</option>
+            <option value="family">Family</option>
+            <option value="budget">Budget</option>
+          </select>
+        </div>
+        <div id="packageGrid" class="cards"></div>
+      </section>
+
+      <section class="container section" id="why-us">
+        <h2>Why Travelers Choose Us</h2>
+        <div class="features">
+          <article><h3>Transparent Pricing</h3><p>Clear inclusions and exclusions with no hidden charges.</p></article>
+          <article><h3>Local Ground Team</h3><p>Real-time support for transfers, ferries, and emergencies.</p></article>
+          <article><h3>Customized Itineraries</h3><p>Trips tailored to your travel style, budget, and dates.</p></article>
+        </div>
+      </section>
+
+      <section class="container section" id="planner">
+        <h2>Custom Trip Planner</h2>
+        <div class="planner-card">
+          <div class="planner-progress"><span id="progressText">Step 1 of 5</span><div class="progress"><div id="progressBar"></div></div></div>
+          <p id="plannerStep"></p>
+          <div class="planner-actions">
+            <button class="btn btn-secondary" id="prevStep">Back</button>
+            <button class="btn btn-primary" id="nextStep">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" id="testimonials">
+        <h2>Real Traveler Reviews</h2>
+        <div class="testimonials">
+          <article><p>“The team handled everything perfectly. Seamless honeymoon with great resorts.”</p><strong>Riya & Amit</strong></article>
+          <article><p>“Amazing support with kids and elderly parents. Smooth transfers and reliable service.”</p><strong>Khan Family</strong></article>
+          <article><p>“They customized our trip around scuba and island hopping. Great value for money.”</p><strong>Arjun & Friends</strong></article>
+        </div>
+      </section>
+
+      <section class="container section" id="contact">
+        <div class="contact-wrap">
+          <div>
+            <h2>Talk to a Travel Expert</h2>
+            <p>Share your dates and preferences. We’ll send a tailored itinerary and quote quickly.</p>
+            <a class="btn btn-primary" href="https://wa.me/919000000000" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <input placeholder="Full Name" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <textarea placeholder="Trip details, dates, number of travelers" required></textarea>
+            <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+            <small id="contactMsg" class="message"></small>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 Naidu Andaman Travels · Built for memorable Andaman experiences.</footer>
+
+    <div class="mobile-cta">
+      <a href="tel:+919000000000">Call</a>
+      <a href="https://wa.me/919000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a href="#planner">Plan</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

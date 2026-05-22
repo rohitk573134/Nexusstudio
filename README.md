@@ -1,11 +1,31 @@
-<div align="center">
+# Naidu Andaman Travels — Premium Website (Next.js)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Stack
+- Next.js 14 (App Router)
+- React + Tailwind CSS
+- Framer Motion
+- Prisma + PostgreSQL
 
-  <h1>Built with AI Studio</h2>
+## Setup
+```bash
+npm install
+cp .env.example .env
+npx prisma generate
+npx prisma db push
+npm run dev
+```
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Features Delivered
+- Cinematic luxury homepage with conversion CTAs
+- Services and featured package sections
+- Sticky WhatsApp CTA + phone CTAs (`+91 96795 73134`)
+- Admin dashboard scaffold for managing content modules
+- API routes for packages and inquiries
+- Prisma models for packages, inquiries, admin users
+- SEO essentials: metadata, OpenGraph, sitemap, robots
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Next Implementation Steps
+- Add authentication (NextAuth or custom JWT) for `/admin`
+- Connect every admin module to dedicated CRUD APIs
+- Integrate Cloudinary upload widget for gallery/media management
+- Add analytics dashboard widgets and inquiry pipeline status tracking

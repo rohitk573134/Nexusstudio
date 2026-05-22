@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naidu Andaman Travels | Andaman Tour Packages</title>
+    <meta name="description" content="Plan your perfect Andaman trip with transparent packages, local support, and fast WhatsApp assistance." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="utility-bar">📞 +91 90000 00000 · WhatsApp Support · 9:00 AM – 9:00 PM</div>
+    <header class="site-header">
+      <div class="logo">Naidu Andaman Travels</div>
+      <nav>
+        <a href="#packages">Packages</a>
+        <a href="#planner">Custom Plan</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#blog">Guides</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn primary" href="#planner">Plan My Trip</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Plan Your Perfect Andaman Trip Without Stress</h1>
+          <p>Local experts, transparent pricing, handpicked stays, and on-ground support from arrival to departure.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#planner">Get Free Itinerary</a>
+            <a class="btn ghost" href="https://wa.me/919000000000" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+          </div>
+        </div>
+        <form class="quick-form card" id="quickForm">
+          <h3>Quick Plan Request</h3>
+          <input placeholder="Travel Month" required />
+          <select required>
+            <option value="">Traveler Type</option>
+            <option>Couple</option>
+            <option>Family</option>
+            <option>Group</option>
+          </select>
+          <select required>
+            <option value="">Budget</option>
+            <option>₹25k - ₹40k</option>
+            <option>₹40k - ₹70k</option>
+            <option>₹70k+</option>
+          </select>
+          <button class="btn primary" type="submit">Get Callback</button>
+          <small id="quickMsg"></small>
+        </form>
+      </section>
+
+      <section class="trust-strip">
+        <div><strong>4.8/5</strong> Guest Rating</div><div><strong>8+</strong> Years Experience</div><div><strong>2500+</strong> Trips Planned</div><div><strong>&lt;15 min</strong> Avg Response</div>
+      </section>
+
+      <section id="packages" class="section">
+        <h2>Popular Andaman Packages</h2>
+        <div class="filters">
+          <select id="typeFilter"><option value="all">All Types</option><option value="couple">Couple</option><option value="family">Family</option><option value="budget">Budget</option></select>
+        </div>
+        <div id="packageGrid" class="grid"></div>
+      </section>
+
+      <section id="planner" class="section">
+        <h2>Custom Trip Planner</h2>
+        <div class="card planner">
+          <div id="plannerStep"></div>
+          <div class="planner-actions">
+            <button class="btn ghost" id="prevStep">Back</button>
+            <button class="btn primary" id="nextStep">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <h2>Traveler Stories</h2>
+        <div class="grid two">
+          <article class="card"><p>“Everything was smooth from airport pickup to ferry transfers. Perfect honeymoon.”</p><strong>Riya & Amit · Couple</strong></article>
+          <article class="card"><p>“Clear inclusions, friendly support, and great family-friendly hotels.”</p><strong>Khan Family · Family</strong></article>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <h2>Frequently Asked Questions</h2>
+        <details><summary>Are ferry tickets included?</summary><p>Yes, based on package inclusions. Upgrades are available.</p></details>
+        <details><summary>Do you help with itinerary customization?</summary><p>Yes, every package can be tailored to your dates and budget.</p></details>
+        <details><summary>How soon can I get a quote?</summary><p>Most inquiries get a response within 15 minutes during business hours.</p></details>
+      </section>
+
+      <section id="blog" class="section">
+        <h2>Travel Guides</h2>
+        <div class="grid three">
+          <article class="card"><h3>Best 5-Day Andaman Itinerary</h3></article>
+          <article class="card"><h3>Andaman Budget Planning Guide</h3></article>
+          <article class="card"><h3>What to Pack for Island Travel</h3></article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm" class="card contact-form">
+          <input placeholder="Full Name" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <textarea placeholder="Tell us your dates and needs" required></textarea>
+          <button class="btn primary" type="submit">Submit Inquiry</button>
+          <small id="contactMsg"></small>
+        </form>
+      </section>
+    </main>
+
+    <div class="mobile-sticky">
+      <a href="tel:+919000000000">Call</a>
+      <a href="https://wa.me/919000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a href="#planner">Plan</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
